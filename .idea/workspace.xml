@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2e75a58-22e0-41be-80f5-ec3ef8972023" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/learning-chain.js" afterDir="false" />
+    <list default="true" id="d2e75a58-22e0-41be-80f5-ec3ef8972023" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/search_url.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/Promise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/for.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/is-prime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo01.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning-chain.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,6 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -49,10 +50,24 @@
       <updated>1648051955511</updated>
       <workItem from="1648051958303" duration="759000" />
       <workItem from="1652963884837" duration="4730000" />
+      <workItem from="1655570772270" duration="1220000" />
+      <workItem from="1655619385032" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const a = [
+        {
+          id: 1,
+          value: "北京",
+        },
+        {
+          id: 2,
+          pid: 1,
+          value: "朝阳",
+        },
+        {
+          id: 3,
+          pid: 2,
+          value: "立水桥",
+        },
+        {
+          id: 4,
+          value: "北京",
+        },
+        {
+          id: 5,
+          pid: 4,
+          value: "海淀",
+        },
+        {
+          id: 6,
+          value: "吉林",
+        },
+        {
+          id: 7,
+          pid: 6,
+          value: "延边",
+        },
+      ];
+
+      // 转树形结构
+      /**
+       * const a' = {
+       *  id: 1,
+       *  value: '北京',
+       *  child: [
+       * {
+       *  value: '朝阳'
+       *  child: [{
+       *      value: '立水桥'
+       * }]
+       * }]
+       * }
+       * @param {*} arr
+       */
+      function toTree(arr) {
+        let a = {};
+        let tree = {};
+        for (let i = 0; i < arr.length; i++) {
+          arr[i].child = [];
+
+          if (arr[i]["pid"]) {
+            a[arr[i]["pid"]] = arr[i];
+          }
+        }
+
+        for (let i = 0; i < arr.length; i++) {
+          if (a[arr[i]["id"]]) {
+            arr[i].child.push(a[arr[i]["id"]]);
+          }
+        }
+
+        return arr.filter((item) => !item.pid);
+      }
+
+      console.log(toTree(a));
+    </script>
+  </body>
+</html>
