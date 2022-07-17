@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="button">点击</button>
+<script>
+    const btn = document.getElementById('button');
+
+    btn.addEventListener('click', () => {
+        window.location = '#/user'
+    })
+
+    window.onhashchange = (e) => {
+        console.log(e.oldURL, e.newURL, location.hash)
+    }
+</script>
+</body>
+</html>

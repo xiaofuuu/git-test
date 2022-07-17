@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现请求中断</title>
+</head>
+<body>
+<script>
+    /**
+     * 请求终端代码
+     */
+    let globalReject = null;
+    let globalC = null;
+    function requestApi() {
+        return new Promise((resolve) => {
+            resolve()
+        })
+    }
+    const cPromise = new Promise((resolve, reject) => (globalReject = reject))
+    globalC = Promise.race([requestApi(), cPromise])
+    /**
+     * 处理业务
+     */
+    globalReject();
+</script>
+</body>
+</html>

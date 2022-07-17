@@ -12,3 +12,21 @@ function deepClone(obj, newObj) {
 }
 
 console.log(deepClone({ a: 1, b: 2, c: [1, 2, 3] }));
+
+function throttle(fn, time) {
+  let cur = 0;
+  return function() {
+    if (Date.now() - cur > time) {
+      cur = Date.now()
+      fn && fn.call()
+    }
+  }
+}
+
+var t = throttle(function() {
+  console.log('hello world')
+}, 1000)
+
+setInterval(() => {
+  t()
+}, 600)
