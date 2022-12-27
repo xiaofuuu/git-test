@@ -22,15 +22,23 @@
 // console.log(customInstance(1, Number))
 
 function isPrime(n) {
-    if (n < 2) {
-        return true
+  if (n < 2) {
+    return true;
+  }
+  for (let i = 2; i <= n; i++) {
+    if (n % i === 0) {
+      return false;
     }
-    for (let i = 2; i <= n; i++) {
-        if (n % i === 0) {
-            return false
-        }
-    }
-    return true
+  }
+  return true;
 }
 
-console.log(isPrime(4))
+function splitArray(arr, n) {
+    let lastArray = []
+    for (var i = 0; i <= n; i+=n) {
+        lastArray.push(arr.slice(i, n + i))
+    }
+    return lastArray
+}
+
+console.log(splitArray([1,2,3], 2));
