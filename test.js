@@ -12,3 +12,5 @@ const isContainedIn = (a, b) => {
 const when = (pred, whenTrue) => (x) => pred(x) ? whenTrue(x) : x;
 
 console.log(isContainedIn([1, 2], [1, 4, 3]));
+
+console.log('12313')
